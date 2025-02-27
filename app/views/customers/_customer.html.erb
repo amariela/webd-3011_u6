@@ -1,0 +1,17 @@
+<tr>
+    <td>
+        <% if customer.image.attached? %>
+            <%= image_tag customer.image, 
+                alt: customer.full_name + ' image', 
+                width: '50px' 
+            %>
+        <% else %>
+            No image uploaded.
+        <% end %>
+    </td>
+    <td><%= customer.full_name %></td>
+    <td><%= customer.phone_number %></td>
+    <td><%= customer.email %></td>
+    <td><%= customer.notes %></td>
+    <td><%= customer.updated_at %></td>
+</tr>

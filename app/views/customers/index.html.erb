@@ -1,0 +1,18 @@
+<h1>All Customers</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Full Name</th>
+      <th>Phone Number</th>
+      <th>Email</th>
+      <th>Notes</th>
+      <th>Image</th>
+      <th>Updated At</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @customers.each do |customer| %>
+      <%= render partial: "customer", locals: { customer: customer } %>
+    <% end %>
+  </tbody>
+</table>
