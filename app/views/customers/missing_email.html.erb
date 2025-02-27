@@ -1,4 +1,8 @@
 <h1>Customers with Missing Email</h1>
+<nav>
+    <%= link_to 'All Customers', root_path %> |
+    <%= link_to 'Alphabetized Customers', alphabetized_customers_path %>
+</nav>
 <table>
     <%= render partial: "table_head" %>
   <tbody>
